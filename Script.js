@@ -1,4 +1,8 @@
-document.getElementById('toggleNav').addEventListener('click', function() {
-    var nav = document.querySelector('nav');
-    nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'block' : 'none';
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navUl = document.querySelector('nav ul');
+
+    burgerMenu.addEventListener('click', function () {
+        navUl.classList.toggle('show');
+    });
 });
